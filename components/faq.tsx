@@ -46,7 +46,8 @@ export const FAQ = () => {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            We don't actually host your videos and this done for two reasons.
+            We don&apos;t actually host your videos and this done for two
+            reasons.
             <Text m="2">1. Because we can offer Cagaros at a low price.</Text>
             <Text m="2">
               2. Video hosting is not our business and we prefer to leave this

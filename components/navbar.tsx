@@ -112,20 +112,7 @@ const DesktopNav = () => {
         <Box key={navItem.label}>
           <Popover trigger={'hover'} placement={'bottom-start'}>
             <PopoverTrigger>
-              <Link
-                p={2}
-                href={navItem.href ?? '#'}
-                fontSize={'sm'}
-                fontWeight={500}
-                color={linkColor}
-                _hover={{
-                  textDecoration: 'none',
-                  color: linkHoverColor,
-                  backgroundColor: '#edf2f7',
-                }}
-              >
-                {navItem.label}
-              </Link>
+              <Link href={navItem.href ?? '#'}>{navItem.label}</Link>
             </PopoverTrigger>
 
             {navItem.children && (
@@ -153,14 +140,7 @@ const DesktopNav = () => {
 
 const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
   return (
-    <Link
-      href={href}
-      role={'group'}
-      display={'block'}
-      p={2}
-      rounded={'md'}
-      _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}
-    >
+    <Link href="/">
       <Stack direction={'row'} align={'center'}>
         <Box>
           <Text
@@ -234,7 +214,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
         )}
       </Flex>
 
-      <Collapse in={isOpen} animateOpacity style={{ marginTop: '0!important' }}>
+      {/* <Collapse in={isOpen} animateOpacity style={{ marginTop: '0!important' }}>
         <Stack
           mt={2}
           pl={4}
@@ -245,12 +225,12 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
         >
           {children &&
             children.map((child) => (
-              <Link key={child.label} py={2} href={child.href}>
+              <Link key={child.label} href={child.href}>
                 {child.label}
               </Link>
             ))}
         </Stack>
-      </Collapse>
+      </Collapse> */}
     </Stack>
   );
 };

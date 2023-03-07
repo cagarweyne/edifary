@@ -47,7 +47,7 @@ export const Testimonial = () => (
     <Stack spacing={{ base: '16', md: '24' }}>
       <Stack spacing="3" align="center" textAlign="center">
         <Heading size={{ base: 'sm', md: 'lg' }}>
-          You're in good company
+          You&apos;re in good company
         </Heading>
       </Stack>
       <SimpleGrid
@@ -60,11 +60,12 @@ export const Testimonial = () => (
         <Stack spacing={{ base: '6', md: '8' }} justify="center">
           <Rating />
           <Text textStyle={{ base: 'lg', md: '2xl' }} fontWeight="medium">
-            "Cagaros stands out because of its dual qualities of simplicity and
-            effectiveness. Its user-friendly design allows beginners to get
+            &quot;Cagaros stands out because of its dual qualities of simplicity
+            and effectiveness. Its user-friendly design allows beginners to get
             started without feeling intimidated or overwhelmed, while still
             providing all the necessary features to create and market
-            professional-looking courses that are engaging and attractive.."
+            professional-looking courses that are engaging and
+            attractive..&quot;
           </Text>
           <Stack
             spacing="5"

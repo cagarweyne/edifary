@@ -15,7 +15,7 @@ import { FaCheck } from 'react-icons/fa';
 interface FeatureProps {
   text: string;
   iconBg: string;
-  icon?: ReactElement;
+  icon?: any;
 }
 
 const Feature = ({ text, icon, iconBg }: FeatureProps) => {
